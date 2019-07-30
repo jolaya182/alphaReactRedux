@@ -1,0 +1,226 @@
+.column{
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 100%;
+
+}
+
+.row{
+  display:flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex:1;
+}
+
+$main-font: sans-serif;
+html, body, #app, #app>div{
+  height:100%;
+}
+
+
+body{
+  font-family: $main-font;
+  font-size: 100%;
+  padding:0;
+  margin:0;
+}
+
+
+
+h1,h2,h3,h4,h5,h6,th, header{
+  font-family:$main-font;
+  font-size:100%;
+  padding:0;
+  margin:0;
+  }
+
+  a{
+    text-decoration:none;
+    color:black;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+
+div.page{
+  display:flex;
+  height: 100%;
+}
+
+div.whoops404{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:99;
+  display:flex;
+  width:100%;
+  height:100%;
+  margin:0;
+  justify-content:center;
+  align-items:center;
+  background-color: darkred;
+  color:ghostwhite;
+  font: size 1.5em;
+
+  a {
+    color:white;
+    text-decoration:underline;
+    margin: 1 em;
+    &:hover {
+      color:yellow;
+      text-decoration:none;
+    }
+  }
+}
+
+// MyMovies SearchMovies
+section.MyMovies,
+section.SearchMovies{
+  font-size:3em;
+  color:slategray;
+  h1{
+    font-size:3em;
+  }
+}
+
+nav.mainMenu{
+  display: flex;
+  flex-direction: column;
+  background-color:slategray;
+  color: ghostwhite;
+  height: 100%;
+  width: 20%;
+  min-width: 20%;
+  a{
+    color:ghostwhite;
+    text-align:center;
+    padding: 1em;
+    font-size: 1.5em;
+  }
+}
+
+.AutoCompleteText{
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color:rgba(0,0,0,0.73);
+}
+
+.AutoCompleteText input{
+  width:100%;
+  border:none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color:rgba(0,0,0,0.73);
+  padding: 10px 15px;
+  box-sizing:border-box;
+  outline:none;
+}
+
+.AutoCompleteText ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid grey;
+}
+
+.AutoCompleteText ul::before {
+  content:""
+}
+
+.AutoCompleteText li{
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.AutoCompleteText li:hover{
+  text-decoration: underline;
+  background-color:rgba(128,128,128,0.20);
+}
+
+.app-component{
+  margin: 15px auto 0 auto;
+  width: 60%;
+}
+
+.movieTile{
+  margin: 10px auto 10px auto;
+  width: 60%;
+  min-width: 60%;
+  border:1px solid gray;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.myMovieTile{
+  margin: 10px auto 10px auto;
+  width: 60%;
+  min-width: 60%;
+  border:1px solid gray;
+  padding: 10px;
+  box-sizing: border-box;
+} 
+.pic{
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.star{
+cursor: pointer;
+height:25px;
+width:25px;
+margin:2px;
+float:left;
+background-color: grey;
+clip-path: polygon(
+  50% 0%,
+  63% 38%,
+  100% 38%,
+  69% 59%,
+  82% 100%,
+  50% 75%,
+  18% 100%,
+  31% 59%,
+  0% 38%,
+  37% 38%
+  );
+}
+
+.star.selected{
+  background-color:red;
+}
+
+.ButtonDeleteMySavedMovies{
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+  cursor: pointer;
+  list-style-type: none;
+  margin: 15px auto 0 auto;
+  justify-content:center;
+  align-items:center;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+
+.ButtonDeleteSavedMovie{
+  border: 1px solid slategray;
+  margin-bottom: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
+  cursor: pointer;
+  list-style-type: none;
+  justify-content:center;
+  align-items:left;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+
+
