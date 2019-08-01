@@ -9,7 +9,7 @@
          
  */
 import React from 'react';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Switch, HashRouter as Router } from 'react-router-dom';
 import { SearchMovies, MyMovies, whoops404 } from '../pages';
 import pages from '../css/index.scss'
 
