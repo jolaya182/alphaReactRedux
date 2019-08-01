@@ -18,7 +18,7 @@ const selectedStyle = {
 }
 
 const MainMenu = () => <nav className={"mainMenu"}>
-  <NavLink to="/" activeStyle={selectedStyle}>[Search Movies]</NavLink>
+  <NavLink to="/SearchMovies" activeStyle={selectedStyle}>[Search Movies]</NavLink>
   <NavLink to="/MyMovies" activeStyle={selectedStyle}>[MyMovies]</NavLink>
 </nav>
 
