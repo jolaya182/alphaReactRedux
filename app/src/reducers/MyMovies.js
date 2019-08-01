@@ -11,6 +11,8 @@
 
 const MyMovies = (state = [], action) => {
   switch (action.type) {
+    case "ERROR_MESSAGE":
+      return [];
     case "UPDATE_MOVIE":
       return state.map((movie) => {
         if (movie.imdbID == action.movie.imdbID) {

@@ -28,7 +28,7 @@ const MyMoviesAndSearchMovie = ({
   deleteAllMoviesFromTheDb
 }) => {
   return (
-    <div>
+    <div className="MymoviesAndSearchMovie">
       {(definiteComponenet === "MyMovies") ? <MyMovies
         deleteAllMovies={deleteAllMovies}
         deleteMovie={deleteMovie}

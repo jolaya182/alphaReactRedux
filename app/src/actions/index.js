@@ -71,9 +71,11 @@ export function getAllMoviesFromDb() {
         response => {
           let json = response.json()
           return json;
-        }, (error) => dispatch(errorMessage("error from get the get action", error))
+        }, (error) => dispatch(errorMessage("error from the 'getAllMoviesFromDb' function. check if the server is working", error))
       )
       .then(json => {
+        
+        if(json.type === "ERROR_MESSAGE"){ return;}
         return dispatch(getMovies(json));
       }, (error) => dispatch(errorMessage("error from get the get action", error)))
   }
