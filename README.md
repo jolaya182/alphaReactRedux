@@ -1,4 +1,8 @@
 # alphaReactRedux
+
+
+<a href="https://imgflip.com/gif/3naly5"><img src="https://i.imgflip.com/3naly5.gif" title="made at imgflip.com"/></a>
+
 download using git clone https://github.com/jolaya182/lvrgRedux.git
 
 use you terminal or comand line of choice
